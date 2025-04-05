@@ -1,16 +1,14 @@
-import type { Plugin } from 'vue'
+import type { Component, Plugin } from 'vue'
 
 import components from './components'
 export default components
 
-export const VaguerComponents: Plugin = {
+export const VueCalendarComponent: Plugin = {
   install(app) {
-    Object.entries(components).forEach(([key, value]: [string, any]) => {
-      app.component(key, value)
+    Object.entries(components).forEach(([key, value]) => {
+      app.component(key, value as Component)
     })
   },
 }
 
-// START_EXPORTS
-export { default as VaguerButton } from './components/VaguerButton.vue'
-// END_EXPORTS
+export { default as VueCalendar } from './components/VueCalendarComponent.vue'

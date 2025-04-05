@@ -1,16 +1,14 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <button class="vaguer-button">
+  <button class="Vue3-Calendar-button">
     <slot />
   </button>
 </template>
 
+<script setup lang="ts"></script>
+
 <style lang="postcss">
-.vaguer-button {
-  @apply
-    border-none
+.Vue3-Calendar-button {
+  @apply border-none
     bg-teal-500
     text-white
     font-bold

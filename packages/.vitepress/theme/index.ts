@@ -1,6 +1,5 @@
-import Layout from './Layout.vue'
+import Layout from './DefaultLayout.vue'
 import NotFound from './NotFound.vue'
-
 
 const theme = {
   Layout,

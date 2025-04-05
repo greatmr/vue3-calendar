@@ -1,12 +1,12 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div>
     My Components
     <div>
-      <VaguerButton>Hello World</VaguerButton>
+      <VueCalendarComponent>Hello World</VueCalendarComponent>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import VueCalendarComponent from '../src/components/VueCalendarComponent.vue'
+</script>

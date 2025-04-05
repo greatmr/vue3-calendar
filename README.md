@@ -1,4 +1,4 @@
-# Vaguer
+# Vue3-Calendar
 
 This repo provides a basic setup for developing component libraries in Vite with Vue 3
 
