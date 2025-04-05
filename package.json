@@ -1,0 +1,52 @@
+{
+  "name": "vaguer",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vaguer.umd.js",
+  "module": "./dist/vaguer.es.js",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "node build/exports.js && vite build && tsc --emitDeclarationOnly"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/vaguer.es.js",
+      "require": "./dist/vaguer.umd.js"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "dependencies": {
+    "esno": "0.10.0",
+    "vue": "^3.2.19"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.9.0",
+    "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@vitejs/plugin-vue": "^1.9.2",
+    "@vue/compiler-sfc": "^3.2.19",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "fast-glob": "^3.2.7",
+    "tsup": "^5.2.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.2",
+    "vite-plugin-windicss": "^1.4.9"
+  },
+  "eslintConfig": {
+    "extends": "@antfu/eslint-config",
+    "ignorePatterns": [
+      "build/**/*.js"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "off"
+    }
+  }
+}
